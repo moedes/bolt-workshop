@@ -1,20 +1,25 @@
+---
+version: 2
 groups:
-  - name: linux
-  targets:
-    - pr_mozesnix0.classroom.puppet.com
+- name: linux
   config:
     transport: ssh
     ssh:
-      user: centos
-      run-as: centos
-      private-key: ~/.ssh/student.pem
       host-key-check: false
-  - name: windows
+      user: centos
+      run-as: root
+# Update following line with path to student.pem      
+      private-key: "./student.pem"
   targets:
-    - pr-mozeswin0.classroom.puppet.com
+# replace # with your assigned number  
+  - bolt41nix#.classroom.puppet.com
+- name: windows
   config:
     transport: winrm
     winrm:
-      user: administrator
+      user: Administrator
       password: Puppetlabs!
       ssl: false
+  targets:
+# replace # with your assigned number
+  - bolt41win#.classroom.puppet.com
