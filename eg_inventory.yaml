@@ -1,0 +1,16 @@
+groups:
+  - name: group_name
+  targets:
+    - IP_address_or_name_of_node1
+    - IP_address_or_name_of_node1
+  config:
+    transport: [ssh | winrm]
+    ssh:
+      user: user_name
+      run-as: root_name
+      private-key: /path/to/key
+      host-key-check: [true | false]
+    winrm:
+      user: user_name
+      password: password
+      ssl: [true | false]
