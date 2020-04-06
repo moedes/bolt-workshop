@@ -1,0 +1,27 @@
+Commands
+
+Lab 1 -
+
+bolt command run 'ping 8.8.8.8 -c2'  --targets dellbwsnix#.classroom.puppet.com --user centos --private-key ./student.pem --no-host-key-check
+bolt command run 'ping 8.8.8.8 -n 2' --targets dellbwswin#.classroom.puppet.com --user Administrator --password Puppetlabs! --transport winrm --no-ssl
+
+Lab 2 - 
+
+Bolt.yaml - https://bit.ly/boltws-bolt
+bolt command run 'ping 8.8.8.8 -c2'  --targets dellbwsnix#.classroom.puppet.com --user centos --private-key ./student.pem
+bolt command run 'ping 8.8.8.8 –n 2’ --targets dellbwswin#.classroom.puppet.com --user Administrator --password Puppetlabs! --transport winrm
+
+Lab 3 - 
+
+Inventory.yaml - https://bit.ly/boltws-inventory
+
+Lab 4 - 
+
+bolt command run 'ping 8.8.8.8 -c2’ --targets linux
+bolt command run 'ping 8.8.8.8 -n 2’ --targets windows
+bolt command run 'hostname’ --targets linux,windows
+
+Lab 5 -
+
+Time_Sync.ps1 - https://bit.ly/boltws-time_sync
+bolt script run time_sync.ps1 --targets windows
