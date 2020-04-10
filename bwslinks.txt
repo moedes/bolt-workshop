@@ -1,9 +1,5 @@
 Commands
 
-Linux security file - 
-
-https://db4820-1.classroom.puppet.com/download/student.pem
-
 Lab 1 -
 
 bolt command run 'ping 8.8.8.8 -c2'  --targets db4820-$nix#.classroom.puppet.com --user centos --private-key ./student.pem --no-host-key-check
